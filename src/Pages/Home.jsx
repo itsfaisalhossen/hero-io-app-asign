@@ -1,9 +1,9 @@
-import Container from "../Components/Container";
+import { HeaderBanner } from "../Components/HeaderBanner";
 
 const Home = () => {
   return (
     <div>
-      <Container>Home</Container>
+      <HeaderBanner />
     </div>
   );
 };
