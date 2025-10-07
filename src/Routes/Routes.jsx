@@ -23,7 +23,7 @@ export const routes = createBrowserRouter([
         Component: Apps,
       },
       {
-        path: "/Isntalled-Apps",
+        path: "/Installed-Apps",
         Component: InstalledApp,
       },
       {
