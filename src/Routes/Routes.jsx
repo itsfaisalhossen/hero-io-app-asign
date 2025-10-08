@@ -11,8 +11,8 @@ export const routes = createBrowserRouter([
   {
     path: "/",
     errorElement: <Error />,
-    element: <RootLayouts />,
     hydrateFallbackElement: <LoadingSpinner />,
+    element: <RootLayouts />,
     children: [
       {
         index: true,
@@ -27,7 +27,7 @@ export const routes = createBrowserRouter([
         Component: InstalledApp,
       },
       {
-        path: "/App-Details/:id",
+        path: "/App-Details/:prductID",
         Component: AppDetails,
       },
     ],

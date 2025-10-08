@@ -1,5 +1,4 @@
 import Container from "../Components/Container";
-import detailsImage from "../assets/image.png";
 import iconDownloads from "../assets/icon-downloads.png";
 import iconReview from "../assets/icon-review.png";
 import iconRatings from "../assets/icon-ratings.png";
@@ -13,15 +12,16 @@ import {
   ResponsiveContainer,
   Bar,
 } from "recharts";
+import Swal from "sweetalert2";
+import { useState } from "react";
 
 const AppDetails = () => {
-  const { id } = useParams();
+  const { prductID } = useParams();
+
   const { apps } = useApps();
-
-  const singleApp = apps.find((app) => app.id === Number(id));
-
+  const singleApp = apps.find((app) => app.id === Number(prductID));
   const {
-    // id,
+    id,
     image,
     ratings,
     size,
@@ -32,15 +32,26 @@ const AppDetails = () => {
     ratingAvg,
     downloads,
   } = singleApp || {};
+  const [installBtn, setInstallBtn] = useState(false);
+
+  const handleInstall = () => {
+    Swal.fire({
+      title: title,
+      text: "Installed Successful!",
+      icon: "success",
+      draggable: true,
+    });
+    setInstallBtn(true);
+  };
 
   return singleApp ? (
     <div className="transition-opacity ease-in duration-500 opacity-100">
       <Container>
         {/* detaisl header */}
         <div className=" flex flex-col items-center md:flex-row gap-5 mt-[80px] mb-[40px] md:gap-10">
-          <divc className="w-[330px] flex items-center justify-center">
-            <img width={120} src={image || null} alt="" />
-          </divc>
+          <div className="w-[330px] flex items-center justify-center">
+            <img width={140} src={image || null} alt="" />
+          </div>
           <div className="space-y-[20px] w-full">
             <h3 className="text-2xl font-medium">{title}</h3>
             <p>
@@ -48,7 +59,6 @@ const AppDetails = () => {
               <span className="font-semibold text-color">{companyName}</span>
             </p>
             <hr className="w-full text-gray-400" />
-
             <div className="flex gap-10">
               <div className="space-y-3">
                 <img src={iconDownloads} width={30} alt="" />
@@ -66,8 +76,12 @@ const AppDetails = () => {
                 <h4 className="text-xl md:text-3xl font-bold">{reviews}k</h4>
               </div>
             </div>
-            <button className="py-2 px-4 rounded font-medium cursor-pointer text-white bg-[#00D390]">
-              Install Now ({size}MB)
+            <button
+              onClick={() => handleInstall(id)}
+              disabled={installBtn}
+              className={`py-2 px-4 rounded font-medium cursor-pointer text-white bg-[#00D390]`}
+            >
+              {installBtn === true ? "Installed" : `Install Now (${size}MB)`}
             </button>
           </div>
         </div>

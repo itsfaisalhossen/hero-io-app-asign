@@ -16,7 +16,7 @@ const Apps = () => {
 
   useEffect(() => {
     if (!apps) return;
-    setIsSearchLoading(true); // start loading
+    setIsSearchLoading(true);
     const timeout = setTimeout(() => {
       const searchedApps = term
         ? apps.filter(
@@ -24,9 +24,9 @@ const Apps = () => {
           )
         : apps;
       setSearchApp(searchedApps);
-      setIsSearchLoading(false); // stop loading
-    }, 1000); // small delay for better UX
-    return () => clearTimeout(timeout); // cleanup if search changes quickly
+      setIsSearchLoading(false);
+    }, 200);
+    return () => clearTimeout(timeout);
   }, [apps, search, term]);
 
   return (
@@ -76,7 +76,7 @@ const Apps = () => {
           <div className="flex gap-5 mt-10 flex-col items-center justify-center">
             <p className="text-3xl font-bold text-gray-500">No apps found</p>
             <div className="w-[200px]">
-              <PrimaryBtn title={"Go Home"} link={"/"} />
+              <PrimaryBtn title={"Go Back"} link={"/"} />
             </div>
           </div>
         ) : (

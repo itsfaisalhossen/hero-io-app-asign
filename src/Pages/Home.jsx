@@ -6,7 +6,6 @@ import Container from "../Components/Container";
 import PrimaryBtn from "../Components/PrimaryBtn";
 import useApps from "../Hooks/useApps";
 import SkeletonLoading from "../Components/SkeletonLoading";
-import LoadingSpinner from "../Components/LoadingSpinner";
 
 const Home = () => {
   const { apps, loading } = useApps();
@@ -14,7 +13,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <LoadingSpinner /> */}
       <HeaderBanner />
       <TrustedPepole />
       <SectionTitle
