@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
+@plugin "daisyui";
 
 * {
   font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 
 body {
   background-color: rgba(240, 248, 255, 0.732);
+}
+
+.text-color {
+  @apply bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] bg-clip-text text-transparent;
 }

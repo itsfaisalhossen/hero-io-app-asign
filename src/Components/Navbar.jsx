@@ -32,9 +32,9 @@ const Navbar = () => {
                 ? "border-b-2 [border-image:linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)_1] decoration-solid decoration-skip-ink-none capitalize bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] bg-clip-text text-transparent"
                 : "text-black"
             }
-            to="/Apps"
+            to="/All-Apps"
           >
-            Apps
+            All Apps
           </NavLink>
         </li>
         <li>

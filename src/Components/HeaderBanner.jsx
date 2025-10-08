@@ -11,10 +11,7 @@ export const HeaderBanner = () => {
         <div className="text-center flex items-center flex-col mt-12 md:mt-16">
           <h3 className="w-full md:w-[590px] mx-auto text-5xl md:text-7xl font-bold">
             We Build{" "}
-            <span className="bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] bg-clip-text text-transparent md:leading-24">
-              Productive
-            </span>{" "}
-            Apps
+            <span className="text-color md:leading-24">Productive</span> Apps
           </h3>
           <p className="mt5 w-full lg:w-[850px] text-gray-600 mx-auto">
             At HERO.IO , we craft innovative apps designed to make everyday life

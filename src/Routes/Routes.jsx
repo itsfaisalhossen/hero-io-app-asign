@@ -19,7 +19,7 @@ export const routes = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "/Apps",
+        path: "/All-Apps",
         Component: Apps,
       },
       {

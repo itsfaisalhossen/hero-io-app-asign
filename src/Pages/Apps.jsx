@@ -2,10 +2,14 @@ import { useState } from "react";
 import AppCard from "../Components/AppCard";
 import Container from "../Components/Container";
 import SectionTitle from "../Components/SectionTitle";
+import useApps from "../Hooks/useApps";
+import SkeletonLoading from "../Components/SkeletonLoading";
 
 const Apps = () => {
+  // eslint-disable-next-line no-unused-vars
   const [search, setSearch] = useState("");
-  console.log(search);
+  // eslint-disable-next-line no-unused-vars
+  const { apps, loading, error } = useApps();
 
   return (
     <div>
@@ -17,7 +21,7 @@ const Apps = () => {
       />
       <Container>
         <div className="flex flex-col gap-3 mt-10 md:flex-row items-center justify-between">
-          <h3 className="font-bold text-xl">(132) Apps Found</h3>
+          <h3 className="font-bold text-xl">({apps.length}) Apps Found</h3>
           <div>
             <label className="flex items-center border-gray-400 p-1.5 md:p-2 rounded border-1">
               <svg
@@ -48,24 +52,15 @@ const Apps = () => {
             </label>
           </div>
         </div>
-        <div className="my-4 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
-        </div>
+        {loading ? (
+          <SkeletonLoading count={25} />
+        ) : (
+          <div className="my-4 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {apps.map((appItem) => (
+              <AppCard key={appItem.id} appItem={appItem} />
+            ))}
+          </div>
+        )}
       </Container>
     </div>
   );

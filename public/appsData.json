@@ -1,0 +1,452 @@
+[
+  {
+    "image": "/images/app1.png",
+    "title": "SnapPix",
+    "companyName": "Photon Labs",
+    "id": 1,
+    "description": "SnapPix is your all-in-one mobile photography studio designed for creators who love capturing the moment. Whether you’re editing selfies, landscapes, or action shots, SnapPix gives you full control with AI-powered filters, precision color correction, and lighting enhancements. Add overlays, artistic frames, or text effects in seconds. With seamless sharing to all major social platforms and automatic cloud backup, your memories stay safe and accessible anywhere. Experience professional-grade tools in a simple, fast, and user-friendly interface—perfect for photographers, influencers, or anyone who wants their photos to shine. SnapPix turns every picture into a story worth sharing.",
+    "size": 85,
+    "reviews": 124,
+    "ratingAvg": 4.6,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 6850 }
+    ]
+  },
+  {
+    "image": "/images/app2.png",
+    "title": "FitTrack",
+    "companyName": "Wellness Co.",
+    "id": 2,
+    "description": "FitTrack helps you take full control of your health and fitness journey with an intuitive dashboard that tracks your workouts, meals, sleep, and hydration in real-time. Create custom exercise plans, set daily goals, and monitor calories burned with smart device integration. FitTrack’s AI fitness assistant analyzes your progress and gives tailored recommendations to keep you motivated. The app also includes guided workouts, community challenges, and achievement badges to make fitness more engaging. Whether you’re training for a marathon or just trying to stay active, FitTrack provides the structure, insights, and inspiration you need to stay consistent and reach your goals.",
+    "size": 110,
+    "reviews": 875,
+    "ratingAvg": 4.4,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4050 }
+    ]
+  },
+  {
+    "image": "/images/app3.png",
+    "title": "NoteEase",
+    "companyName": "PaperTrail Ltd.",
+    "id": 3,
+    "description": "NoteEase is the ultimate digital notebook built to simplify how you organize thoughts, ideas, and to-do lists. Capture notes instantly, attach images, voice memos, and sync across all devices with seamless cloud backup. Use color tags, folders, and AI-powered search to find any note in seconds. Whether you’re planning a project, studying, or journaling your day, NoteEase adapts to your style with flexible layouts and customizable templates. Collaborate effortlessly by sharing notes or checklists with friends or colleagues in real time. With a clean and distraction-free interface, NoteEase turns everyday note-taking into an efficient, organized, and creative experience.",
+    "size": 42,
+    "reviews": 640,
+    "ratingAvg": 4.7,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 3450 }
+    ]
+  },
+  {
+    "image": "/images/app4.png",
+    "title": "ZenWeather",
+    "companyName": "Skyline Tech",
+    "id": 4,
+    "description": "ZenWeather combines accurate meteorological data with beautiful design to give you more than just forecasts—it provides peace of mind. Get real-time weather updates, hourly and 10-day forecasts, and detailed radar maps powered by precision tracking. The app’s calm and minimalist interface helps you focus on what matters: whether it’s clear skies for a morning jog or heavy rain before your commute. ZenWeather also includes sunrise and sunset times, air quality index, and storm alerts customized to your location. It’s the perfect companion for travelers, outdoor lovers, or anyone who appreciates weather insights delivered with clarity and style.",
+    "size": 60,
+    "reviews": 540,
+    "ratingAvg": 4.2,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "/images/app5.png",
+    "title": "LangBuddy",
+    "companyName": "PolyLingua",
+    "id": 5,
+    "description": "LangBuddy makes language learning engaging, fast, and effective through real-world conversation practice and interactive lessons. Learn over 40 languages with AI chat tutors who correct pronunciation, grammar, and vocabulary in real time. The app offers bite-sized lessons, cultural tips, and gamified progress tracking that keeps you coming back. Whether you’re preparing for travel, business, or self-improvement, LangBuddy adapts to your skill level and learning speed. Join global chat rooms, earn streak rewards, and immerse yourself in authentic dialogues. With LangBuddy, mastering a new language becomes not just possible—but enjoyable, motivating, and entirely personalized to you.",
+    "size": 95,
+    "reviews": 178,
+    "ratingAvg": 4.8,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 11800 }
+    ]
+  },
+  {
+    "image": "/images/app6.png",
+    "title": "BudgetFlow",
+    "companyName": "FinEdge",
+    "id": 6,
+    "description": "BudgetFlow is your personal finance companion designed to make money management effortless. Automatically track expenses, categorize spending, and visualize cash flow with detailed analytics and colorful charts. Link your bank accounts securely to monitor transactions in real time and set custom budgets for categories like groceries, entertainment, or travel. BudgetFlow alerts you before you overspend and provides smart saving tips tailored to your habits. Whether you’re managing a household, saving for a goal, or simply want to understand your financial health, BudgetFlow helps you take control with confidence. It’s more than a budget tracker—it’s a financial coach that grows with you.",
+    "size": 58,
+    "reviews": 940,
+    "ratingAvg": 4.5,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "image": "/images/app7.png",
+    "title": "Travelista",
+    "companyName": "Voyage Studios",
+    "id": 7,
+    "description": "Travelista is your smart travel partner built for explorers who love discovering new places. Plan your trips, find hidden attractions, and get personalized itineraries based on your interests and travel style. From budget-friendly stays to must-visit restaurants, Travelista curates everything in one sleek interface. Use offline maps, flight trackers, and currency converters while you travel. You can even connect with other travelers to share experiences or get local tips. With detailed reviews, trav,a memorable adventure. Whether you’re backpacking through Europe or planning a weekend escape, Travelista has you covered.",
+    "size": 120,
+    "reviews": 870,
+    "ratingAvg": 4.3,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "image": "/images/app8.png",
+    "title": "Cookify",
+    "companyName": "FoodVerse Inc.",
+    "id": 8,
+    "description": "Cookify connects food lovers, home chefs, and culinary explorers in one beautiful app. Discover thousands of curated recipes from around the world, complete with step-by-step instructions, nutrition data, and ingredient substitutions. Upload your own creations and build a personal cookbook that syncs across all devices. The built-in meal planner and grocery list help you stay organized and save time. Whether you’re cooking a quick dinner or trying a gourmet dish, Cookify’s smart assistant suggests recipes based on what you already have at home. Engage with a passionate community, share feedback, and elevate your cooking journey one meal at a time.",
+    "size": 105,
+    "reviews": 129,
+    "ratingAvg": 4.9,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 10800 }
+    ]
+  },
+  {
+    "image": "/images/app9.png",
+    "title": "SoundScape",
+    "companyName": "EchoWorks",
+    "id": 9,
+    "description": "SoundScape redefines how you experience music. Dive into millions of tracks, handcrafted playlists, and personalized radio stations powered by smart recommendations. Discover emerging artists, follow your favorite bands, and create mood-based playlists that evolve with your taste. The app's elegant interface, lossless audio streaming, and offline listening make it perfect for both audiophiles and casual listeners. You can also explore live concerts, podcasts, and music news—all in one place. SoundScape learns your preferences over time, offering fresh suggestions that feel just right. Whether you're working out, studying, or relaxing, SoundScape sets the perfect soundtrack for your moment.",
+    "size": 92,
+    "reviews": 158,
+    "ratingAvg": 4.6,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 9900 }
+    ]
+  },
+  {
+    "image": "/images/app10.png",
+    "title": "QuickScan",
+    "companyName": "DocuPro",
+    "id": 10,
+    "description": "QuickScan turns your smartphone into a high-quality document scanner in seconds. Simply point your camera, and the app automatically detects edges, crops, and enhances clarity using AI optimization. Save or export your scans as PDF, JPG, or TXT files with built-in OCR text recognition. QuickScan’s batch scanning, cloud sync, and document tagging make organization effortless. Whether you’re scanning receipts, contracts, or handwritten notes, QuickScan ensures professional results every time. Integrations with email, Google Drive, and Dropbox keep your files accessible wherever you go. It’s the ultimate tool for students, professionals, and anyone who values productivity on the go.",
+    "size": 55,
+    "reviews": 720,
+    "ratingAvg": 4.3,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 3300 }
+    ]
+  },
+  {
+    "image": "/images/app11.png",
+    "title": "MindNest",
+    "companyName": "Calmify Labs",
+    "id": 11,
+    "description": "MindNest helps you find calm and focus in your daily life through guided meditation, mindfulness exercises, and breathing sessions. Whether you’re dealing with stress, sleeplessness, or anxiety, MindNest offers tailored programs designed by certified experts. Track your emotional progress and build healthy mental habits one day at a time. The app’s soothing visuals, nature sounds, and ambient music help you unwind effortlessly. With reminders, streak tracking, and progress visualization, MindNest encourages consistency and self-awareness. Discover how just a few minutes of mindfulness can transform your mood, improve focus, and elevate your overall wellbeing every single day.",
+    "size": 78,
+    "reviews": 110,
+    "ratingAvg": 4.8,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "/images/app12.png",
+    "title": "Taskify",
+    "companyName": "NextGen Tools",
+    "id": 12,
+    "description": "Taskify is your personal productivity powerhouse designed to simplify how you manage tasks and projects. Create to-do lists, set reminders, and organize work with tags, deadlines, and progress tracking. The app’s clean interface makes planning your day effortless, while real-time sync keeps everything updated across devices. Collaborate with teammates or family members using shared boards and task assignments. Taskify integrates seamlessly with calendar apps and cloud storage for maximum flexibility. From daily chores to complex projects, Taskify ensures you never miss a beat. It’s productivity made simple, smart, and satisfying—helping you stay focused on what truly matters.",
+    "size": 50,
+    "reviews": 890,
+    "ratingAvg": 4.5,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4650 }
+    ]
+  },
+  {
+    "image": "/images/app13.png",
+    "title": "StreamBox",
+    "companyName": "Vision Media",
+    "id": 13,
+    "description": "StreamBox brings entertainment to your fingertips with a vast collection of movies, TV shows, and documentaries. Enjoy seamless streaming in HD, create personalized watchlists, and receive recommendations based on your viewing history. With support for offline downloads, yo can take your favorite content anywhere. StreamBox’s adaptive bitrate technology ensures smooth playback, even on slow connections. The app includes parental controls, subtitle customization, and smart casting to TVs for a cinema-like experience. From trending dramas to timeless classics, StreamBox keeps you entertained around the clock. Experience the future of streaming—personalized, powerful, and always ready to play.",
+    "size": 140,
+    "reviews": 182,
+    "ratingAvg": 4.7,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 9200 }
+    ]
+  },
+  {
+    "image": "/images/app14.png",
+    "title": "PhotoTune",
+    "companyName": "PixelMagic",
+    "id": 14,
+    "description": "PhotoTune is a professional-grade photo editor built for everyone. With AI-powered retouching, advanced color grading, and smart object removal, your images will look stunning in seconds. Adjust lighting, exposure, and tone with precision sliders or use one-tap enhancements for instant results. PhotoTune also supports RAW editing for photographers who demand full control. Share edited photos directly to social media or export them in high resolution. The app’s smooth interface, layer-based editing, and filter packs make it both powerful and beginner-friendly. Whether you’re refining portraits, fixing old photos, or designing creative edits, PhotoTune makes every image extraordinary.",
+    "size": 75,
+    "reviews": 134,
+    "ratingAvg": 4.4,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 7500 }
+    ]
+  },
+  {
+    "image": "/images/app15.png",
+    "title": "RideOn",
+    "companyName": "UrbanMove",
+    "id": 15,
+    "description": "RideOn revolutionizes city travel with fast, reliable ride booking at your fingertips. Compare fares across multiple services, book instant rides, and track your driver’s arrival in real time. RideOn prioritizes safety with verified drivers, in-app emergency support, and cashless payments for a seamless experience. Whether it’s your daily commute or a late-night pickup, RideOn ensures convenience and transparency with every trip. The app offers fare estimates, ride-sharing options, and eco-friendly choices for sustainable travelers. Stay connected, travel smarter, and enjoy comfort every mile of the way—because RideOn isn’t just about getting there; it’s about enjoying the journey.",
+    "size": 90,
+    "reviews": 158,
+    "ratingAvg": 4.2,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "image": "/images/app16.png",
+    "title": "EduSphere",
+    "companyName": "LearnTech",
+    "id": 16,
+    "description": "EduSphere transforms learning into a personalized experience for students and professionals alike. Access thousands of expert-led video courses, live workshops, and skill assessments across multiple disciplines. The platform adapts to your pace, suggesting lessons that match your progress and career goals. EduSphere also includes quizzes, certification options, and offline learning for flexibility. Interact with instructors, join study groups, and track your growth with analytics dashboards. Whether you’re mastering coding, marketing, or design, EduSphere helps you build practical, job-ready skills in an engaging environment. Learn smarter, grow faster, and make knowledge your competitive edge with EduSphere.",
+    "size": 130,
+    "reviews": 940,
+    "ratingAvg": 4.6,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "/images/app17.png",
+    "title": "SecureVault",
+    "companyName": "SafeNet Systems",
+    "id": 17,
+    "description": "SecureVault protects your most sensitive information with military-grade encryption and zero-knowledge security architecture. Safely store passwords, notes, credit cards, and personal documents in a private digital vault only you can access. Biometric login and two-factor authentication add an extra layer of protection. SecureVault automatically fills passwords in apps and browsers, saving you time while keeping your data secure. With secure cloud sync, your information is available across all devices without ever compromising privacy. Whether for personal or business use, SecureVault ensures peace of mind knowing your digital life stays safe, encrypted, and completely under your control.",
+    "size": 40,
+    "reviews": 720,
+    "ratingAvg": 4.9,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "image": "/images/app18.png",
+    "title": "HealthMate",
+    "companyName": "WellTrack",
+    "id": 18,
+    "description": "HealthMate is your complete health tracker designed to help you live better every day. Monitor your heart rate, sleep cycles, calorie intake, and daily steps with precision. The app connects seamlessly with wearables and gives real-time feedback on your wellness goals. Personalized health insights, hydration reminders, and fitness challenges keep you motivated. HealthMate also tracks mood and energy levels to help you identify patterns and improve your lifestyle habits. Whether you’re aiming for weight loss or better sleep quality, HealthMate’s detailed analytics and recommendations guide you every step of the way—because your health journey deserves smart support.",
+    "size": 80,
+    "reviews": 158,
+    "ratingAvg": 4.5,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "image": "/images/app19.png",
+    "title": "NewsPulse",
+    "companyName": "DailyBits",
+    "id": 19,
+    "description": "NewsPulse delivers the world’s top headlines and personalized news straight to your phone. Stay informed with real-time updates from trusted global sources across technology, politics, entertainment, and sports. The app’s AI-curated feed learns your interests and tailors articles to your reading habits. Save stories for offline reading or switch to audio mode to listen on the go. With customizable notifications and clean layouts, NewsPulse offers an uninterrupted reading experience. Fact-checked, fast, and relevant—NewsPulse keeps you updated on what matters most, without the clutter. Experience journalism reimagined for the modern reader.",
+    "size": 66,
+    "reviews": 112,
+    "ratingAvg": 4.3,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "/images/app15.png",
+    "title": "EcoTrack",
+    "companyName": "GreenCore Labs",
+    "id": 20,
+    "description": "EcoTrack empowers environmentally conscious individuals to monitor and reduce their carbon footprint in practical ways. Track energy consumption, transportation habits, and product choices with intuitive tools that calculate your daily impact. The app suggests eco-friendly alternatives and provides weekly sustainability goals tailored to your lifestyle. You can also connect with community challenges, learn about renewable energy tips, and measure long-term progress with detailed analytics. EcoTrack’s clean interface and actionable insights help make sustainability feel achievable and rewarding. Whether you're new to green living or deeply committed to environmental change, EcoTrack makes every small step count toward a cleaner, more sustainable planet.",
+    "size": 72,
+    "reviews": 870,
+    "ratingAvg": 4.6,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "/images/app16.png",
+    "title": "MindBloom",
+    "companyName": "Calmware Studios",
+    "id": 21,
+    "description": "MindBloom brings mindfulness and self-care together in one beautifully designed app. It offers daily meditation sessions, breathing exercises, and mood-tracking tools to help you manage stress and improve mental clarity. Each session is guided by calming audio and visuals inspired by nature, creating a peaceful environment for relaxation. Personalized reminders and progress tracking keep you consistent and motivated, while the gratitude journal encourages reflection and positivity. MindBloom also integrates with wearables to monitor heart rate and stress levels in real time. Whether you’re taking a quick break or building a long-term mindfulness habit, MindBloom helps you find balance and peace in your daily routine.",
+    "size": 105,
+    "reviews": 164,
+    "ratingAvg": 4.9,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 11700 }
+    ]
+  },
+  {
+    "image": "/images/app17.png",
+    "title": "ChefMate",
+    "companyName": "FlavorSoft",
+    "id": 22,
+    "description": "ChefMate is your digital kitchen companion that helps you cook smarter and waste less. Browse thousands of step-by-step recipes tailored to your ingredients, dietary preferences, and skill level. The app includes video tutorials, meal planning tools, and smart grocery lists that automatically adjust based on servings. With ChefMate’s AI-powered cooking assistant, you can substitute ingredients on the fly and receive real-time cooking tips. It even tracks pantry inventory and suggests creative ways to use leftovers. Whether you’re a beginner or a seasoned cook, ChefMate simplifies every part of the cooking experience while helping you save time, reduce food waste, and make every meal delicious.",
+    "size": 128,
+    "reviews": 191,
+    "ratingAvg": 4.8,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 13300 }
+    ]
+  },
+  {
+    "image": "/images/app18.png",
+    "title": "TravelNest",
+    "companyName": "Voyager Digital",
+    "id": 23,
+    "description": "TravelNest redefines how you plan and enjoy your trips with smart travel organization and real-time discovery features. From booking flights and hotels to managing itineraries, the app brings everything under one roof. It automatically suggests local attractions, restaurants, and experiences based on your preferences and location. You can save and share trips, get weather forecasts, and access offline maps anywhere in the world. TravelNest’s AI assistant helps optimize your schedule and budget, while travel journals let you document every moment with photos and notes. Whether it’s a solo adventure or family vacation, TravelNest makes travel planning seamless, personal, and stress-free.",
+    "size": 138,
+    "reviews": 220,
+    "ratingAvg": 4.7,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 13300 }
+    ]
+  },
+  {
+    "image": "/images/app19.png",
+    "title": "TaskHive",
+    "companyName": "FlowTech Systems",
+    "id": 24,
+    "description": "TaskHive is a productivity powerhouse that helps individuals and teams organize tasks, projects, and deadlines efficiently. With powerful boards, lists, and timelines, you can visualize progress and collaborate seamlessly. TaskHive integrates with major tools like Google Calendar, Slack, and Notion, syncing your entire workflow in one place. Smart automation and reminders ensure nothing slips through the cracks, while analytics dashboards provide insight into performance and time management. The sleek and intuitive design makes it easy for anyone—from freelancers to large organizations—to stay focused and aligned. With TaskHive, productivity isn’t about working harder; it’s about working smarter every single day.",
+    "size": 114,
+    "reviews": 157,
+    "ratingAvg": 4.5,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "/images/app20.png",
+    "title": "GameVerse",
+    "companyName": "Infinity Play Studios",
+    "id": 25,
+    "description": "GameVerse is the ultimate destination for mobile gamers, combining discovery, social interaction, and performance tracking in one platform. Explore trending games, read reviews, and ,recommendations based on your gaming style. GameVerse lets you connect with friends, join tournaments, and earn rewards through gameplay achievements. It also features built-in performance analytics that monitor frame rate, device temperature, and network latency to ensure smooth gaming sessions. Stay updated with the latest releases and patch notes from your favorite developers. Whether you’re a casual player or a competitive gamer, GameVerse turns every gaming session into a connected, exciting, and rewarding experience.",
+    "size": 189,
+    "reviews": 248,
+    "ratingAvg": 4.9,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 550 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 18400 }
+    ]
+  }
+]
