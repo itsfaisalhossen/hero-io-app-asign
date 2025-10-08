@@ -5,6 +5,14 @@ import iconReview from "../assets/icon-review.png";
 import iconRatings from "../assets/icon-ratings.png";
 import useApps from "../Hooks/useApps";
 import { useParams } from "react-router";
+import {
+  ComposedChart,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  Bar,
+} from "recharts";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -14,7 +22,7 @@ const AppDetails = () => {
   const {
     // id,
     // image,
-    // ratings,
+    ratings,
     size,
     title,
     companyName,
@@ -63,6 +71,26 @@ const AppDetails = () => {
         {/* detaisl Ratings */}
         <div className="border-t-2 border-b-2 border-gray-200 py-8">
           <h3 className="text-xl font-semibold">Ratings</h3>
+          <div className="py-4 h-80 mt-">
+            <ResponsiveContainer width="100%" height="100%">
+              <ComposedChart
+                layout="vertical"
+                width={500}
+                height={500}
+                data={ratings}
+                margin={{
+                  top: 10,
+                  right: 20,
+                  left: -10,
+                }}
+              >
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" scale="band" />
+                <Tooltip />
+                <Bar dataKey="count" barSize={20} fill="#FF8811" />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
         </div>
         {/* detaisl Description */}
         <div className="my-8">
