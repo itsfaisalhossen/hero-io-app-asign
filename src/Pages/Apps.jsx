@@ -6,10 +6,13 @@ import useApps from "../Hooks/useApps";
 import SkeletonLoading from "../Components/SkeletonLoading";
 
 const Apps = () => {
-  // eslint-disable-next-line no-unused-vars
+  const { apps, loading } = useApps();
   const [search, setSearch] = useState("");
-  // eslint-disable-next-line no-unused-vars
-  const { apps, loading, error } = useApps();
+  const term = (search || "").trim().toLowerCase();
+
+  const searchedApps = term
+    ? apps.filter((app) => app.title && app.title.toLowerCase().includes(term))
+    : apps;
 
   return (
     <div>
@@ -21,7 +24,9 @@ const Apps = () => {
       />
       <Container>
         <div className="flex flex-col gap-3 mt-10 md:flex-row items-center justify-between">
-          <h3 className="font-bold text-xl">({apps.length}) Apps Found</h3>
+          <h3 className="font-bold text-xl">
+            ({searchedApps.length}) Apps Found
+          </h3>
           <div>
             <label className="flex items-center border-gray-400 p-1.5 md:p-2 rounded border-1">
               <svg
@@ -43,7 +48,8 @@ const Apps = () => {
               <input
                 required
                 type="search"
-                className="p-1.5 text-sm w-full"
+                // className="p-1.5 text-sm w-full"
+                className="flex-1 outline-none bg-inherit text-sm w-full"
                 onChange={(e) => {
                   setSearch(e.target.value);
                 }}
@@ -56,7 +62,7 @@ const Apps = () => {
           <SkeletonLoading count={25} />
         ) : (
           <div className="my-4 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {apps.map((appItem) => (
+            {searchedApps.map((appItem) => (
               <AppCard key={appItem.id} appItem={appItem} />
             ))}
           </div>

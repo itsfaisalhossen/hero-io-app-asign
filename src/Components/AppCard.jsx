@@ -5,15 +5,15 @@ import iconRatings from "../assets/icon-ratings.png";
 const AppCard = ({ appItem }) => {
   const {
     id,
-    image,
     title,
+    image,
+    downloads,
+    ratingAvg,
     // companyName,
     // description,
     // size,
     // reviews,
     // ratings,
-    ratingAvg,
-    downloads,
   } = appItem || {};
   return (
     <Link

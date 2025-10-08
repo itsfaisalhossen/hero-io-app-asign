@@ -8,8 +8,7 @@ import useApps from "../Hooks/useApps";
 import SkeletonLoading from "../Components/SkeletonLoading";
 
 const Home = () => {
-  // eslint-disable-next-line no-unused-vars
-  const { apps, loading, error } = useApps();
+  const { apps, loading } = useApps();
   const trendingApps = apps.slice(0, 8);
 
   return (
