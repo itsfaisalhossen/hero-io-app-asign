@@ -7,11 +7,11 @@ It allows users to browse, search, and explore different apps in a clean, fast, 
 
 ## 🚀 Features
 
-- ⚡ **Fast and Interactive UI** – Built with React for smooth rendering and efficient updates
+- ⚡ **Frontend Features** – Search Sroting localStorage Routing smoth Loading for the SPA and dynamic data empelent
+- 🧩 **Fast and Interactive UI** – Built with React for smooth rendering and efficient updates
 - 🎨 **Responsive Design** – Styled using Tailwind CSS for pixel-perfect layouts across all devices
 - 🔔 **SweetAlert Notifications** – Seamless user feedback powered by SweetAlert
-- 🧩 **Reusable Components** – Modular structure for easy scalability and maintenance
-- 🖼️ **Lucide Icons** – Modern, clean, and lightweight icons for an elegant interface
+- 🔄 **Reusable Components** – Modular structure for easy scalability and maintenance
 
 ---
 
