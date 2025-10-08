@@ -5,7 +5,7 @@ const InstalledCard = () => {
     <div className="flex flex-col gap-4 md:flex-row w-full bg-white rounded justify-between p-4 items-center">
       <div className="flex flex-col w-full md:flex-row items-center gap-4">
         <div className="w-full md:w-[140px] rounded h-[140px] md:h-[100px] bg-gray-500">
-          <img src="" className="w-full" alt="" />
+          <img src={null} className="w-full" alt="" />
         </div>
         <div>
           <h4 className="mb-2 md:text-lg md:font-medium">

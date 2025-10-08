@@ -1,18 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AppCard from "../Components/AppCard";
 import Container from "../Components/Container";
 import SectionTitle from "../Components/SectionTitle";
 import useApps from "../Hooks/useApps";
-import SkeletonLoading from "../Components/SkeletonLoading";
+import LoadingSpinner from "../Components/LoadingSpinner";
+import PrimaryBtn from "../Components/PrimaryBtn";
 
 const Apps = () => {
   const { apps, loading } = useApps();
   const [search, setSearch] = useState("");
+  const [searchApp, setSearchApp] = useState(apps);
+  const [isSearchLoading, setIsSearchLoading] = useState(false);
+
   const term = (search || "").trim().toLowerCase();
 
-  const searchedApps = term
-    ? apps.filter((app) => app.title && app.title.toLowerCase().includes(term))
-    : apps;
+  useEffect(() => {
+    if (!apps) return;
+    setIsSearchLoading(true); // start loading
+    const timeout = setTimeout(() => {
+      const searchedApps = term
+        ? apps.filter(
+            (app) => app.title && app.title.toLowerCase().includes(term)
+          )
+        : apps;
+      setSearchApp(searchedApps);
+      setIsSearchLoading(false); // stop loading
+    }, 1000); // small delay for better UX
+    return () => clearTimeout(timeout); // cleanup if search changes quickly
+  }, [apps, search, term]);
 
   return (
     <div>
@@ -24,9 +39,7 @@ const Apps = () => {
       />
       <Container>
         <div className="flex flex-col gap-3 mt-10 md:flex-row items-center justify-between">
-          <h3 className="font-bold text-xl">
-            ({searchedApps.length}) Apps Found
-          </h3>
+          <h3 className="font-bold text-xl">({searchApp.length}) Apps Found</h3>
           <div>
             <label className="flex items-center border-gray-400 p-1.5 md:p-2 rounded border-1">
               <svg
@@ -48,7 +61,6 @@ const Apps = () => {
               <input
                 required
                 type="search"
-                // className="p-1.5 text-sm w-full"
                 className="flex-1 outline-none bg-inherit text-sm w-full"
                 onChange={(e) => {
                   setSearch(e.target.value);
@@ -58,11 +70,18 @@ const Apps = () => {
             </label>
           </div>
         </div>
-        {loading ? (
-          <SkeletonLoading count={25} />
+        {loading || isSearchLoading ? (
+          <LoadingSpinner />
+        ) : searchApp.length === 0 ? (
+          <div className="flex gap-5 mt-10 flex-col items-center justify-center">
+            <p className="text-3xl font-bold text-gray-500">No apps found</p>
+            <div className="w-[200px]">
+              <PrimaryBtn title={"Go Home"} link={"/"} />
+            </div>
+          </div>
         ) : (
           <div className="my-4 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {searchedApps.map((appItem) => (
+            {searchApp.map((appItem) => (
               <AppCard key={appItem.id} appItem={appItem} />
             ))}
           </div>

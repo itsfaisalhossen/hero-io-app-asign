@@ -5,6 +5,7 @@ import InstalledCard from "../Components/InstalledCard";
 
 const InstalledApp = () => {
   const [sortOrder, setSortOrder] = useState("none");
+
   return (
     <div>
       <Container>

@@ -1,6 +1,6 @@
 [
   {
-    "image": "/images/app1.png",
+    "image": "https://img.icons8.com/officel/80/camera.png",
     "title": "SnapPix",
     "companyName": "Photon Labs",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "/images/app2.png",
+    "image": "https://img.icons8.com/hands/100/doctors-bag.png",
     "title": "FitTrack",
     "companyName": "Wellness Co.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "/images/app3.png",
+    "image": "https://img.icons8.com/hands/100/notepad.png",
     "title": "NoteEase",
     "companyName": "PaperTrail Ltd.",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "/images/app4.png",
+    "image": "https://img.icons8.com/officel/80/windy-weather.png",
     "title": "ZenWeather",
     "companyName": "Skyline Tech",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "/images/app5.png",
+    "image": "https://img.icons8.com/stickers/100/translation.png",
     "title": "LangBuddy",
     "companyName": "PolyLingua",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "/images/app6.png",
+    "image": "https://img.icons8.com/hatch/64/budget.png",
     "title": "BudgetFlow",
     "companyName": "FinEdge",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "/images/app7.png",
+    "image": "https://img.icons8.com/nolan/64/iceberg.png",
     "title": "Travelista",
     "companyName": "Voyage Studios",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "/images/app8.png",
+    "image": "https://img.icons8.com/nolan/64/kawaii-bread-1.png",
     "title": "Cookify",
     "companyName": "FoodVerse Inc.",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "/images/app9.png",
+    "image": "https://img.icons8.com/nolan/64/B0B0B0/2E2E2E/voice-meeter.png",
     "title": "SoundScape",
     "companyName": "EchoWorks",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "/images/app10.png",
+    "image": "https://img.icons8.com/3d-fluency/94/qr-code.png",
     "title": "QuickScan",
     "companyName": "DocuPro",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "/images/app11.png",
+    "image": "https://img.icons8.com/3d-fluency/94/knowledge-sharing.png",
     "title": "MindNest",
     "companyName": "Calmify Labs",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "/images/app12.png",
+    "image": "https://img.icons8.com/3d-fluency/94/hard-working.png",
     "title": "Taskify",
     "companyName": "NextGen Tools",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "/images/app13.png",
+    "image": "https://img.icons8.com/3d-fluency/94/video-gallery.png",
     "title": "StreamBox",
     "companyName": "Vision Media",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "/images/app14.png",
+    "image": "https://img.icons8.com/3d-fluency/94/lamp-of-alladin.png",
     "title": "PhotoTune",
     "companyName": "PixelMagic",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "/images/app15.png",
+    "image": "https://img.icons8.com/liquid-glass/48/bookmark-ribbon.png",
     "title": "RideOn",
     "companyName": "UrbanMove",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "/images/app16.png",
+    "image": "https://img.icons8.com/stickers/100/artificial-intelligence.png",
     "title": "EduSphere",
     "companyName": "LearnTech",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "/images/app17.png",
+    "image": "https://img.icons8.com/stickers/100/shield.png",
     "title": "SecureVault",
     "companyName": "SafeNet Systems",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "/images/app18.png",
+    "image": "https://img.icons8.com/stickers/100/hospital.png",
     "title": "HealthMate",
     "companyName": "WellTrack",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "/images/app19.png",
+    "image": "https://img.icons8.com/stickers/100/feedly.png",
     "title": "NewsPulse",
     "companyName": "DailyBits",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "/images/app15.png",
+    "image": "https://img.icons8.com/stickers/100/greenhouse-effect.png",
     "title": "EcoTrack",
     "companyName": "GreenCore Labs",
     "id": 20,
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "image": "/images/app16.png",
+    "image": "https://img.icons8.com/stickers/100/person-in-a-mirror.png",
     "title": "MindBloom",
     "companyName": "Calmware Studios",
     "id": 21,
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "image": "/images/app17.png",
+    "image": "https://img.icons8.com/stickers/100/kitchen-room.png",
     "title": "ChefMate",
     "companyName": "FlavorSoft",
     "id": 22,
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "image": "/images/app18.png",
+    "image": "https://img.icons8.com/hatch/64/trekking.png",
     "title": "TravelNest",
     "companyName": "Voyager Digital",
     "id": 23,
@@ -414,7 +414,7 @@
     ]
   },
   {
-    "image": "/images/app19.png",
+    "image": "https://img.icons8.com/stickers/100/to-do.png",
     "title": "TaskHive",
     "companyName": "FlowTech Systems",
     "id": 24,
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "image": "/images/app20.png",
+    "image": "https://img.icons8.com/stickers/100/games-folder.png",
     "title": "GameVerse",
     "companyName": "Infinity Play Studios",
     "id": 25,

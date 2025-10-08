@@ -19,9 +19,10 @@ const AppDetails = () => {
   const { apps } = useApps();
 
   const singleApp = apps.find((app) => app.id === Number(id));
+
   const {
     // id,
-    // image,
+    image,
     ratings,
     size,
     title,
@@ -37,7 +38,9 @@ const AppDetails = () => {
       <Container>
         {/* detaisl header */}
         <div className=" flex flex-col items-center md:flex-row gap-5 mt-[80px] mb-[40px] md:gap-10">
-          <img className="w-full md:w-[330px]" src={detailsImage} alt="" />
+          <divc className="w-[330px] flex items-center justify-center">
+            <img width={120} src={image || null} alt="" />
+          </divc>
           <div className="space-y-[20px] w-full">
             <h3 className="text-2xl font-medium">{title}</h3>
             <p>
@@ -71,7 +74,7 @@ const AppDetails = () => {
         {/* detaisl Ratings */}
         <div className="border-t-2 border-b-2 border-gray-200 py-8">
           <h3 className="text-xl font-semibold">Ratings</h3>
-          <div className="py-4 h-80 mt-">
+          <div className="py-4 h-80">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart
                 layout="vertical"
