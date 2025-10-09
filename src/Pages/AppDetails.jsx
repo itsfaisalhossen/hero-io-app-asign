@@ -4,6 +4,8 @@ import iconReview from "../assets/icon-review.png";
 import iconRatings from "../assets/icon-ratings.png";
 import useApps from "../Hooks/useApps";
 import { useParams } from "react-router";
+import { useContext, useState } from "react";
+import Swal from "sweetalert2";
 import {
   ComposedChart,
   XAxis,
@@ -12,14 +14,42 @@ import {
   ResponsiveContainer,
   Bar,
 } from "recharts";
-import Swal from "sweetalert2";
-import { useState } from "react";
+import { ApptContext } from "../Providers/AppContext";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const AppDetails = () => {
+  const { apps, loading } = useApps();
   const { prductID } = useParams();
-
-  const { apps } = useApps();
+  const { installeApps, setInstalleApps } = useContext(ApptContext);
+  const [installBtn, setInstallBtn] = useState(false);
   const singleApp = apps.find((app) => app.id === Number(prductID));
+
+  const handleAddToInstall = (id) => {
+    setInstalleApps((prev) => [...prev, singleApp]);
+    const existingAppsList = JSON.parse(
+      localStorage.getItem("installAppslist")
+    );
+    let updatedAppsList = [];
+    if (existingAppsList) {
+      const isDuplicate = existingAppsList.some((app) => app.id === id);
+      if (isDuplicate) {
+        return alert("Already installed");
+      }
+      updatedAppsList = [...existingAppsList, singleApp];
+    } else {
+      updatedAppsList.push(singleApp);
+    }
+    localStorage.setItem("installAppslist", JSON.stringify(updatedAppsList));
+    Swal.fire({
+      title: title,
+      text: "Installed Successful!",
+      icon: "success",
+      draggable: true,
+    });
+    setInstallBtn(true);
+  };
+
+  if (loading) return <LoadingSpinner />;
   const {
     id,
     image,
@@ -32,17 +62,6 @@ const AppDetails = () => {
     ratingAvg,
     downloads,
   } = singleApp || {};
-  const [installBtn, setInstallBtn] = useState(false);
-
-  const handleInstall = () => {
-    Swal.fire({
-      title: title,
-      text: "Installed Successful!",
-      icon: "success",
-      draggable: true,
-    });
-    setInstallBtn(true);
-  };
 
   return singleApp ? (
     <div className="transition-opacity ease-in duration-500 opacity-100">
@@ -53,7 +72,12 @@ const AppDetails = () => {
             <img width={140} src={image || null} alt="" />
           </div>
           <div className="space-y-[20px] w-full">
-            <h3 className="text-2xl font-medium">{title}</h3>
+            <div className="flex justify-between items-center">
+              <h3 className="text-2xl font-medium">{title}</h3>
+              <h4 className="font-bold text-sm">
+                Installed Apps: {installeApps.length}
+              </h4>
+            </div>
             <p>
               Developed by {""}
               <span className="font-semibold text-color">{companyName}</span>
@@ -77,7 +101,7 @@ const AppDetails = () => {
               </div>
             </div>
             <button
-              onClick={() => handleInstall(id)}
+              onClick={() => handleAddToInstall(id)}
               disabled={installBtn}
               className={`py-2 px-4 rounded font-medium cursor-pointer text-white bg-[#00D390]`}
             >

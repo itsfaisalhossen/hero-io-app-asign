@@ -9,9 +9,9 @@ It allows users to browse, search, and explore different apps in a clean, fast, 
 
 - ⚡ **Frontend Features** – Search Sroting localStorage Routing smoth Loading for the SPA and dynamic data empelent
 - 🧩 **Fast and Interactive UI** – Built with React for smooth rendering and efficient updates
+- 🔄 **Reusable Components** – Modular structure for easy scalability and maintenance
 - 🎨 **Responsive Design** – Styled using Tailwind CSS for pixel-perfect layouts across all devices
 - 🔔 **SweetAlert Notifications** – Seamless user feedback powered by SweetAlert
-- 🔄 **Reusable Components** – Modular structure for easy scalability and maintenance
 
 ---
 

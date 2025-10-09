@@ -11,8 +11,8 @@ export const routes = createBrowserRouter([
   {
     path: "/",
     errorElement: <Error />,
-    hydrateFallbackElement: <LoadingSpinner />,
     element: <RootLayouts />,
+    hydrateFallbackElement: <LoadingSpinner />,
     children: [
       {
         index: true,

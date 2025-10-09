@@ -9,7 +9,7 @@ const AppCard = ({ appItem }) => {
       to={`/App-Details/${id}`}
       className="p-4 w-full bg-white rounded-md space-y-4 hover:scale-105 transition-all duration-300"
     >
-      <div className="bg-gray-100 flex flex-col items-center justify-center w-full h-[200px] rounded-md">
+      <div className="bg-gray-50 flex flex-col items-center justify-center w-full h-[200px] rounded-md">
         <img width={100} src={image} alt="card_image" />
       </div>
       <h3 className="font-medium">{title}</h3>
