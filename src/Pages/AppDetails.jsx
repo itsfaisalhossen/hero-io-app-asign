@@ -4,7 +4,7 @@ import iconReview from "../assets/icon-review.png";
 import iconRatings from "../assets/icon-ratings.png";
 import useApps from "../Hooks/useApps";
 import { useParams } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import {
   ComposedChart,
@@ -25,21 +25,31 @@ const AppDetails = () => {
   const [installBtn, setInstallBtn] = useState(false);
   const singleApp = apps.find((app) => app.id === Number(prductID));
 
-  const handleAddToInstall = (id) => {
-    // setInstalleApps((prev) => [...prev, singleApp]);
-    const existingAppsList = JSON.parse(
-      localStorage.getItem("installAppslist")
+  useEffect(() => {
+    const existingAppsList =
+      JSON.parse(localStorage.getItem("installAppslist")) || [];
+    const isAlreadyInstalled = existingAppsList.some(
+      (app) => app.id === Number(prductID)
     );
-    let updatedAppsList = [];
-    if (existingAppsList) {
-      const isDuplicate = existingAppsList.some((app) => app.id === id);
-      if (isDuplicate) {
-        return alert("Already installed");
-      }
-      updatedAppsList = [...existingAppsList, singleApp];
-    } else {
-      updatedAppsList.push(singleApp);
+    if (isAlreadyInstalled) {
+      setInstallBtn(true);
     }
+  }, [prductID]);
+
+  const handleAddToInstall = (id) => {
+    const existingAppsList =
+      JSON.parse(localStorage.getItem("installAppslist")) || [];
+    const isDuplicate = existingAppsList.some((app) => app.id === id);
+    if (isDuplicate) {
+      setInstallBtn(true);
+      return Swal.fire({
+        title: "Already Installed!",
+        text: `${title} is already installed.`,
+        icon: "info",
+        draggable: true,
+      });
+    }
+    const updatedAppsList = [...existingAppsList, singleApp];
     localStorage.setItem("installAppslist", JSON.stringify(updatedAppsList));
     Swal.fire({
       title: title,
@@ -123,9 +133,13 @@ const AppDetails = () => {
             <button
               onClick={() => handleAddToInstall(id)}
               disabled={installBtn}
-              className={`py-2 px-4 rounded font-medium cursor-pointer text-white bg-[#00D390]`}
+              className={`py-2 px-4 rounded font-medium cursor-pointer text-white ${
+                installBtn
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-[#00D390] hover:bg-[#00b87d]"
+              } transition`}
             >
-              {installBtn === true ? "Installed" : `Install Now (${size}MB)`}
+              {installBtn ? "Installed" : `Install Now (${size}MB)`}
             </button>
           </div>
         </div>
