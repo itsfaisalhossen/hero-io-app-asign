@@ -36,7 +36,7 @@ It allows users to browse, search, and explore different apps in a clean, fast, 
 1. **Navigate to the project folder**
 
    ```bash
-   cd thero-io-app-asign
+   cd hero-io-app-asign
    ```
 
 1. **Install dependencies**

@@ -8,6 +8,8 @@ const InstalledApp = () => {
   const [installAppsList, setInstallAppsList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
+  console.log(installAppsList);
+
   useEffect(() => {
     const savedAppsList = JSON.parse(localStorage.getItem("installAppslist"));
     if (savedAppsList) {
@@ -63,13 +65,13 @@ const InstalledApp = () => {
           subTitle={"Explore All Trending Apps on the Market developed by us"}
         />
         <div className="flex gap-3 mt-10 mb-10 items-center justify-between">
-          {sortedItem.length === 0 ? (
+          {sortedItem?.length === 0 ? (
             <h3 className="font-bold text-xl">
-              ({sortedItem.length}) Apps Fonud
+              ({sortedItem?.length}) Apps Fonud
             </h3>
           ) : (
             <h3 className="font-bold text-xl">
-              ({sortedItem.length}) Apps Fonud
+              ({sortedItem?.length}) Apps Fonud
             </h3>
           )}
           <label>
@@ -85,7 +87,7 @@ const InstalledApp = () => {
           </label>
         </div>
         <div className="space-y-4 my-5">
-          {sortedItem.map((inCard) => (
+          {sortedItem?.map((inCard) => (
             <InstalledCard
               handleUninstallApp={handleUninstallApp}
               inCard={inCard}

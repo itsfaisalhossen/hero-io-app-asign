@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router";
-import Home from "../Pages/Home";
-import InstalledApp from "../Pages/InstalledApp";
-import AppDetails from "../Pages/AppDetails";
-import Apps from "../Pages/Apps";
-import Error from "../Pages/Error";
 import LoadingSpinner from "../Components/LoadingSpinner";
+import { createBrowserRouter } from "react-router";
+import InstalledApp from "../Pages/InstalledApp";
 import RootLayouts from "../Layouts/RootLayouts";
+import AppDetails from "../Pages/AppDetails";
+import Error from "../Pages/Error";
+import Home from "../Pages/Home";
+import Apps from "../Pages/Apps";
 
 export const routes = createBrowserRouter([
   {

@@ -20,8 +20,13 @@ const Error = () => {
                 The page you are looking for is not available.
               </p>
             </div>
-            <div className="w-[200px] mt-5">
-              <PrimaryBtn title={"Go back!"} link={"/"} />
+            <div className="flex flex-col md:flex-row md:gap-4">
+              <div className="w-[160px] mt-5">
+                <PrimaryBtn title={"Back to Home!"} link={"/"} />
+              </div>
+              <div className="w-[160px] mt-5">
+                <PrimaryBtn title={"Browse Apps"} link={"/All-Apps"} />
+              </div>
             </div>
           </div>
         </Container>

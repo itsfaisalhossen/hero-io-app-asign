@@ -4,7 +4,7 @@ import iconReview from "../assets/icon-review.png";
 import iconRatings from "../assets/icon-ratings.png";
 import useApps from "../Hooks/useApps";
 import { useParams } from "react-router";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import {
   ComposedChart,
@@ -14,18 +14,19 @@ import {
   ResponsiveContainer,
   Bar,
 } from "recharts";
-import { ApptContext } from "../Providers/AppContext";
 import LoadingSpinner from "../Components/LoadingSpinner";
+import PrimaryBtn from "../Components/PrimaryBtn";
+import AppError from "../assets/App-Error.png";
 
 const AppDetails = () => {
   const { apps, loading } = useApps();
   const { prductID } = useParams();
-  const { installeApps, setInstalleApps } = useContext(ApptContext);
+  // const { installeApps, setInstalleApps } = useContext(ApptContext);
   const [installBtn, setInstallBtn] = useState(false);
   const singleApp = apps.find((app) => app.id === Number(prductID));
 
   const handleAddToInstall = (id) => {
-    setInstalleApps((prev) => [...prev, singleApp]);
+    // setInstalleApps((prev) => [...prev, singleApp]);
     const existingAppsList = JSON.parse(
       localStorage.getItem("installAppslist")
     );
@@ -63,6 +64,29 @@ const AppDetails = () => {
     downloads,
   } = singleApp || {};
 
+  if (!singleApp) {
+    return (
+      <div className="flex my-8 md:my-16 space-y-5 md:space-y-7 flex-col items-center justify-center min-h-[60vh] text-center">
+        <img width={300} src={AppError} alt="" />
+        <h2 className="text-2xl md:text-4xl font-bold text-red-500">
+          OPPS!! APP NOT FOUND
+        </h2>
+        <p className="text-gray-500">
+          The App you are requesting is not found on our system. please try
+          another apps
+        </p>
+        <div className="flex flex-col md:flex-row md:gap-4">
+          <div className="w-[160px] mt-5">
+            <PrimaryBtn title={"Back to Home!"} link={"/"} />
+          </div>
+          <div className="w-[160px] mt-5">
+            <PrimaryBtn title={"Browse Apps"} link={"/All-Apps"} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return singleApp ? (
     <div className="transition-opacity ease-in duration-500 opacity-100">
       <Container>
@@ -72,12 +96,8 @@ const AppDetails = () => {
             <img width={140} src={image || null} alt="" />
           </div>
           <div className="space-y-[20px] w-full">
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-medium">{title}</h3>
-              <h4 className="font-bold text-sm">
-                Installed Apps: {installeApps.length}
-              </h4>
-            </div>
+            <h3 className="text-2xl font-medium">{title}</h3>
+
             <p>
               Developed by {""}
               <span className="font-semibold text-color">{companyName}</span>
