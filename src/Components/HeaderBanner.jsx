@@ -13,7 +13,7 @@ export const HeaderBanner = () => {
             We Build{" "}
             <span className="text-color md:leading-24">Productive</span> Apps
           </h3>
-          <p className="mt5 w-full lg:w-[850px] text-gray-600 mx-auto">
+          <p className="mt-5 w-full lg:w-[850px] text-gray-600 mx-auto">
             At HERO.IO , we craft innovative apps designed to make everyday life
             simpler, smarter, and more exciting. Our goal is to turn your ideas
             into digital experiences that truly make an impact.

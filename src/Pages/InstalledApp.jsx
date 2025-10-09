@@ -66,11 +66,11 @@ const InstalledApp = () => {
         />
         <div className="flex gap-3 mt-10 mb-10 items-center justify-between">
           {sortedItem?.length === 0 ? (
-            <h3 className="font-bold text-xl">
+            <h3 className="font-bold text-lg md:text-xl">
               ({sortedItem?.length}) Apps Fonud
             </h3>
           ) : (
-            <h3 className="font-bold text-xl">
+            <h3 className="font-bold text-lg md:text-xl">
               ({sortedItem?.length}) Apps Fonud
             </h3>
           )}

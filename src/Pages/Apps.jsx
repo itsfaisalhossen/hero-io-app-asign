@@ -38,8 +38,10 @@ const Apps = () => {
         }
       />
       <Container>
-        <div className="flex flex-col gap-3 mt-10 md:flex-row items-center justify-between">
-          <h3 className="font-bold text-xl">({searchApp.length}) Apps Found</h3>
+        <div className="flex gap-3 mt-10 md:flex-row items-center justify-between">
+          <h3 className="font-bold text-lg md:text-xl">
+            ({searchApp.length}) Apps Found
+          </h3>
           <div>
             <label className="flex items-center border-gray-400 p-1.5 md:p-2 rounded border-1">
               <svg
@@ -80,7 +82,7 @@ const Apps = () => {
             </div>
           </div>
         ) : (
-          <div className="my-4 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {searchApp.map((appItem) => (
               <AppCard key={appItem.id} appItem={appItem} />
             ))}

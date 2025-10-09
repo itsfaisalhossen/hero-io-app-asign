@@ -12,7 +12,7 @@ const Navbar = () => {
           HERO.IO
         </p>
       </NavLink>
-      <ul className="flex items-center gap-8 font-medium">
+      <ul className="flex items-center text-[14px] md:text-[16px] gap-6 md:gap-8 md:font-medium">
         <li>
           <NavLink
             className={({ isActive }) =>

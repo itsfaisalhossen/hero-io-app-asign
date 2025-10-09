@@ -6,8 +6,8 @@ const InstalledCard = ({ inCard, handleUninstallApp }) => {
   return (
     <div className="flex flex-col gap-4 md:flex-row w-full bg-white rounded justify-between p-4 items-center">
       <div className="flex flex-col w-full md:flex-row items-center gap-4">
-        <div className="w-full md:w-[130px] bg-gray-50 p-5 rounded-md">
-          <img src={image || null} className="w-full" alt="" />
+        <div className="w-full flex flex-col items-center justify-center md:w-[130px] bg-gray-50 p-5 rounded-md">
+          <img width={120} src={image || null} alt="" />
         </div>
         <div>
           <h4 className="mb-2 md:text-lg md:font-medium">{title}</h4>
