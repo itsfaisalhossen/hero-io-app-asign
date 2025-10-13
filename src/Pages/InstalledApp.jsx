@@ -8,8 +8,6 @@ const InstalledApp = () => {
   const [installAppsList, setInstallAppsList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
-  console.log(installAppsList);
-
   useEffect(() => {
     const savedAppsList = JSON.parse(localStorage.getItem("installAppslist"));
     if (savedAppsList) {
@@ -59,12 +57,13 @@ const InstalledApp = () => {
 
   return (
     <div>
+      <title>Hero-io | Installation Apps</title>
       <Container>
         <SectionTitle
           title={"Your Installed Apps"}
           subTitle={"Explore All Trending Apps on the Market developed by us"}
         />
-        <div className="flex gap-3 mt-10 mb-10 items-center justify-between">
+        <div className="flex dark:text-white gap-3 mt-10 mb-10 items-center justify-between">
           {sortedItem?.length === 0 ? (
             <h3 className="font-bold text-lg md:text-xl">
               ({sortedItem?.length}) Apps Fonud
@@ -76,7 +75,7 @@ const InstalledApp = () => {
           )}
           <label>
             <select
-              className="border-gray-400 text-sm p-2.5 md:p-3.5 w-full sm:w-[250px] rounded border-1"
+              className="border-gray-400 dark:border-white/60 text-sm p-2.5 md:p-3.5 w-full sm:w-[250px] rounded border-1 dark:bg-primary-dark"
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
             >

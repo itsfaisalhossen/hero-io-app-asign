@@ -4,9 +4,9 @@ import iconRatings from "../assets/icon-ratings.png";
 const InstalledCard = ({ inCard, handleUninstallApp }) => {
   const { id, title, image, downloads, ratingAvg, size } = inCard || {};
   return (
-    <div className="flex flex-col gap-4 md:flex-row w-full bg-white rounded justify-between p-4 items-center">
+    <div className="flex flex-col gap-4 md:flex-row w-full dark:bg-primary-dark dark:text-white/80 dark:border dark:border-white/20 bg-white rounded justify-between p-4 items-center">
       <div className="flex flex-col w-full md:flex-row items-center gap-4">
-        <div className="w-full flex flex-col items-center justify-center md:w-[130px] bg-gray-50 p-5 rounded-md">
+        <div className="w-full flex flex-col items-center justify-center md:w-[130px] bg-gray-50 dark:bg-white/10 p-5 rounded-md">
           <img width={120} src={image || null} alt="" />
         </div>
         <div>

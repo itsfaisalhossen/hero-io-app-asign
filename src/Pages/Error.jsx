@@ -7,6 +7,7 @@ import errorImage from "../assets/error-404.png";
 const Error = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <title>Error 404</title>
       <Navbar />
       <div className="flex-1 items-center justify-center ">
         <Container>

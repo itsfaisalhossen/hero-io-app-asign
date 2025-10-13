@@ -31,6 +31,7 @@ const Apps = () => {
 
   return (
     <div>
+      <title>Hero-io | Apps</title>
       <SectionTitle
         title={"Our All Applications"}
         subTitle={
@@ -38,7 +39,7 @@ const Apps = () => {
         }
       />
       <Container>
-        <div className="flex gap-3 mt-10 md:flex-row items-center justify-between">
+        <div className="flex dark:text-white gap-3 mt-10 md:flex-row items-center justify-between">
           <h3 className="font-bold text-lg md:text-xl">
             ({searchApp.length}) Apps Found
           </h3>

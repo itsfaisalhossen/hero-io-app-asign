@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <div>
+      <title>Hero-io | Home</title>
       <HeaderBanner />
       <TrustedPepole />
       <SectionTitle

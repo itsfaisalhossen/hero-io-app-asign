@@ -98,21 +98,21 @@ const AppDetails = () => {
   }
 
   return singleApp ? (
-    <div className="transition-opacity ease-in duration-500 opacity-100">
+    <div className="transition-opacity dark:text-white/90 ease-in duration-500 opacity-100">
       <Container>
+        <title>{title}</title>
         {/* detaisl header */}
         <div className=" flex flex-col items-center md:flex-row gap-5 mt-[80px] mb-[40px] md:gap-10">
-          <div className="w-[330px] flex items-center justify-center">
+          <div className="md:w-[330px] dark:bg-white/10 h-[200px] w-3/5 rounded-xl flex items-center justify-center">
             <img width={140} src={image || null} alt="" />
           </div>
           <div className="space-y-[20px] w-full">
             <h3 className="text-2xl font-medium">{title}</h3>
-
             <p>
               Developed by {""}
               <span className="font-semibold text-color">{companyName}</span>
             </p>
-            <hr className="w-full text-gray-400" />
+            <hr className="w-full text-gray-400 dark:text-white/20" />
             <div className="flex gap-10">
               <div className="space-y-3">
                 <img src={iconDownloads} width={30} alt="" />
@@ -144,7 +144,7 @@ const AppDetails = () => {
           </div>
         </div>
         {/* detaisl Ratings */}
-        <div className="border-t-2 border-b-2 border-gray-200 py-8">
+        <div className="border-t-2 border-b-2 dark:border-white/10 border-gray-200 py-8">
           <h3 className="text-xl font-semibold">Ratings</h3>
           <div className="py-4 h-80">
             <ResponsiveContainer width="100%" height="100%">
@@ -170,7 +170,9 @@ const AppDetails = () => {
         {/* detaisl Description */}
         <div className="my-8">
           <h3 className="text-xl font-semibold mb-6">Descriptions</h3>
-          <p className="text-gray-500 text-sm leading-6">{description}</p>
+          <p className="text-gray-500 dark:text-white/90 text-sm leading-6">
+            {description}
+          </p>
         </div>
       </Container>
     </div>
